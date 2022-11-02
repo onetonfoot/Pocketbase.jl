@@ -1,0 +1,199 @@
+[
+  {
+    "id": "systemprofiles0",
+    "name": "profiles",
+    "system": true,
+    "listRule": "userId = @request.user.id",
+    "viewRule": "userId = @request.user.id",
+    "createRule": "userId = @request.user.id",
+    "updateRule": "userId = @request.user.id",
+    "deleteRule": null,
+    "schema": [
+      {
+        "id": "pbfielduser",
+        "name": "userId",
+        "type": "user",
+        "system": true,
+        "required": true,
+        "unique": true,
+        "options": {
+          "maxSelect": 1,
+          "cascadeDelete": true
+        }
+      },
+      {
+        "id": "pbfieldname",
+        "name": "name",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "unique": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "pbfieldavatar",
+        "name": "avatar",
+        "type": "file",
+        "system": false,
+        "required": false,
+        "unique": false,
+        "options": {
+          "maxSelect": 1,
+          "maxSize": 5242880,
+          "mimeTypes": [
+            "image/jpg",
+            "image/jpeg",
+            "image/png",
+            "image/svg+xml",
+            "image/gif"
+          ],
+          "thumbs": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "oewqfnsrce7nqcn",
+    "name": "machine",
+    "system": false,
+    "listRule": null,
+    "viewRule": null,
+    "createRule": null,
+    "updateRule": null,
+    "deleteRule": null,
+    "schema": [
+      {
+        "id": "clhhoek4",
+        "name": "name",
+        "type": "text",
+        "system": false,
+        "required": true,
+        "unique": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "ftg9ambk",
+        "name": "mac",
+        "type": "text",
+        "system": false,
+        "required": true,
+        "unique": true,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "2mrcxr0j",
+        "name": "project",
+        "type": "text",
+        "system": false,
+        "required": true,
+        "unique": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "vaomnrmg",
+        "name": "version",
+        "type": "text",
+        "system": false,
+        "required": true,
+        "unique": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      }
+    ]
+  },
+  {
+    "id": "xemp306w8jybdv2",
+    "name": "summary",
+    "system": false,
+    "listRule": null,
+    "viewRule": null,
+    "createRule": null,
+    "updateRule": null,
+    "deleteRule": null,
+    "schema": [
+      {
+        "id": "i8u9h5pw",
+        "name": "test_machine_id",
+        "type": "relation",
+        "system": false,
+        "required": false,
+        "unique": false,
+        "options": {
+          "maxSelect": 0,
+          "collectionId": "test_machine",
+          "cascadeDelete": false
+        }
+      },
+      {
+        "id": "6gsfbgf3",
+        "name": "description",
+        "type": "text",
+        "system": false,
+        "required": true,
+        "unique": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "dfverw80",
+        "name": "raw_data",
+        "type": "file",
+        "system": false,
+        "required": false,
+        "unique": false,
+        "options": {
+          "maxSelect": 0,
+          "maxSize": 0,
+          "mimeTypes": [
+            "application/json"
+          ],
+          "thumbs": null
+        }
+      },
+      {
+        "id": "cjjwmbo3",
+        "name": "passed",
+        "type": "bool",
+        "system": false,
+        "required": false,
+        "unique": false,
+        "options": {}
+      },
+      {
+        "id": "zp52sxe3",
+        "name": "error",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "unique": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      }
+    ]
+  }
+]

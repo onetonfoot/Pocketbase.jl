@@ -1,0 +1,13 @@
+name = "Pocketbase"
+uuid = "35cda9f5-0ef6-4ef9-a844-3c8e7ab6ae19"
+authors = ["dom <onetonfoot@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+CompositeStructs = "534720e6-2374-40c5-8712-bf9a2f1643c6"
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+JSON3 = "0f8b85d8-7281-11e9-16c2-39a750bddbf1"
+StringCases = "f22f4433-750e-5048-95f9-cae576f2c120"
+StructTypes = "856f2bd8-1eba-4b0a-8007-ebc267875bd4"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+URIs = "5c2747f8-b7ea-4ff2-ba2e-563bfd36b1d4"
